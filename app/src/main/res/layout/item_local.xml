@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_margin="6dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:checkable="true"
+    android:id="@+id/ItemLocal">
+
+    <ImageView
+        android:id="@+id/ItemLocalImagen"
+        android:layout_width="107dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="0dp"
+        android:contentDescription="@string/imagen"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/ItemLocalNombre"
+        android:layout_width="271dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="0dp"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/ItemLocalRubro"
+        android:layout_width="271dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="35dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/ItemLocalDireccion"
+        android:layout_width="271dp"
+        android:layout_height="30dp"
+        android:textSize="16sp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="65dp" />
+
+
+</com.google.android.material.card.MaterialCardView>

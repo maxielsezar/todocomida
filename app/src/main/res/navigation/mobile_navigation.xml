@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigacion_inicio">
+
+    <fragment
+        android:id="@+id/navigacion_inicio"
+        android:name="com.desarrolloswesquel.todocomida.controladores.InicioFragment"
+        android:label="@string/inicio"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/navigation_locales"
+        android:name="com.desarrolloswesquel.todocomida.controladores.LocalesFragment"
+        android:label="@string/locales"
+        tools:layout="@layout/fragment_locales" />
+
+    <fragment
+        android:id="@+id/navigacion_mapa"
+        android:name="com.desarrolloswesquel.todocomida.controladores.MapaFragment"
+        android:label="@string/mapa"
+        tools:layout="@layout/fragment_mapa" />
+</navigation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigacion_inicio"
+        android:icon="@drawable/inicio_24dp"
+        android:title="@string/inicio" />
+
+    <item
+        android:id="@+id/navigation_locales"
+        android:icon="@drawable/restaurant_24dp"
+        android:title="@string/locales" />
+
+    <item
+        android:id="@+id/navigacion_mapa"
+        android:icon="@drawable/map_24dp"
+        android:title="@string/mapa" />
+
+</menu>
