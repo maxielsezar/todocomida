@@ -48,8 +48,15 @@ class CargarProducto {
                 2000,
                 "salsa, tomate, muzzarela",
                 0
-            )
-
+            ),
+            Producto(
+                4,
+            1,
+            "pizza de muzzarela",
+            2000,
+            "salsa, tomate, muzzarela",
+            0
+        )
         )
     }
 

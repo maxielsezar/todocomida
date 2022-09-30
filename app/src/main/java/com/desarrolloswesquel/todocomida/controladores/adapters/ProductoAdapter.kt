@@ -14,14 +14,13 @@ class ProductoAdapter(
 
 ): RecyclerView.Adapter<ProductoAdapter.localesViewHolder>() {
 
-    class localesViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
+    class localesViewHolder(view: View): RecyclerView.ViewHolder(view) {
         val nombreproducto: TextView = view.findViewById(R.id.ItemProductoNombre)
         val descripcionProducto: TextView = view.findViewById(R.id.ItemProductoDescripcion)
         val precioProducto: TextView = view.findViewById(R.id.ItemProductoPrecio)
         val imagenProducto: ImageView = view.findViewById(R.id.ItemProductoImagen)
 
     }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): localesViewHolder {
         val adapterLayout = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_producto, parent, false)
@@ -34,11 +33,6 @@ class ProductoAdapter(
         holder.descripcionProducto.text = item.Descripcion
         holder.precioProducto.text = item.PrecioProducto.toString()
         holder.imagenProducto.setImageResource(item.ImagenProducto)
-    }
-
-    fun filtrarLista(listaFiltrada: ArrayList<Producto>) {
-        ListaProducto = listaFiltrada
-        notifyDataSetChanged()
     }
 
     override fun getItemCount() = ListaProducto.size
