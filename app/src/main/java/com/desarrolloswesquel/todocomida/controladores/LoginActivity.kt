@@ -18,7 +18,7 @@ class LoginActivity : AppCompatActivity() {
         binding = LoginActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        findViewById<Button>(R.id.IngresarEmail).setOnClickListener {
+        binding.IngresarEmail.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }
     }
