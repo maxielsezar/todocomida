@@ -43,8 +43,6 @@ class LocalesAdapter(
         notifyDataSetChanged()
     }
 
-
-
     override fun getItemCount() = ListLocales.size
 
 }

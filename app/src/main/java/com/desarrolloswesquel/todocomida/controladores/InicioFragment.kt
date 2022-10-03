@@ -47,6 +47,7 @@ class InicioFragment : Fragment(){
         val intent = Intent(context, CategoriaActivity::class.java)
         intent  .putExtra("nombrecategoria", categoria.NombreCategoria)
             .putExtra("imagencategoria", categoria.ImagenCategoria)
+            .putExtra("IdCategoria",categoria.IDCategoria)
         startActivity(intent)
     }
 }
