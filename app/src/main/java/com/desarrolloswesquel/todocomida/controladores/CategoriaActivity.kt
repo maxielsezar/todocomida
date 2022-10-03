@@ -7,16 +7,14 @@ import com.desarrolloswesquel.todocomida.R
 import com.desarrolloswesquel.todocomida.controladores.adapters.LocalesAdapter
 import com.desarrolloswesquel.todocomida.databinding.ActivityCategoriaBinding
 import com.desarrolloswesquel.todocomida.modelo.Local
-import com.desarrolloswesquel.todocomida.modelo.LocalesCategoria
 import com.desarrolloswesquel.todocomida.modelo.carga.CargaLocalesCategoria
 import com.desarrolloswesquel.todocomida.modelo.carga.CargarLocal
 
 class CategoriaActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityCategoriaBinding
-    private var localesMutableList: MutableList<Local> =
-        CargarLocal().listaLocales().toMutableList()
-    private var ListalocalesCategoria = CargaLocalesCategoria().listaLocalesCategoria()
+    private var localesMutableList: MutableList<Local> = CargarLocal().listaLocales().toMutableList()
+    private var listaLocalesCategoria = CargaLocalesCategoria().listaLocalesCategoria()
     private lateinit var adapter: LocalesAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,22 +31,19 @@ class CategoriaActivity : AppCompatActivity() {
         }
 
         val categoria = intent.extras?.get("IdCategoria") as Int
-
-        val listadofiltrado =filtrarLista(localesMutableList, categoria)
-        adapter = LocalesAdapter(listadofiltrado) { local -> localClick(local) }
+        val listadoFiltrada =filtrarLista(categoria)
+        adapter = LocalesAdapter(listadoFiltrada) { local -> localClick(local) }
         val recyclerView = binding.ListadoLocales
         recyclerView.adapter = adapter
         recyclerView.setHasFixedSize(true)
 
     }
 
-    private fun filtrarLista(localesMutableList: MutableList<Local>, categoria: Int): ArrayList<Local> {
-
+    private fun filtrarLista(categoria: Int): ArrayList<Local> {
         val listaFiltrado: ArrayList<Local> = ArrayList()
-
-        for (LocalesCategoria in ListalocalesCategoria) {
+        for (localesCategoria in listaLocalesCategoria) {
             for (local in localesMutableList){
-                if (local.IdLocal == LocalesCategoria.IdLocal && LocalesCategoria.IdCategoria==categoria
+                if (local.IdLocal == localesCategoria.IdLocal && localesCategoria.IdCategoria==categoria
                         ) {
                     listaFiltrado.add(local)
                 }
