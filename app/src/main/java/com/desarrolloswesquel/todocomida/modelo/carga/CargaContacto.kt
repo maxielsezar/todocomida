@@ -11,13 +11,13 @@ class CargaContacto() {
                 0,
                 0,
                 MetodosContactos.NumTelefonoFijo,
-                "02945 45-3800"
+                "tel:+542945453800"
             ),
             Contacto(
                 1,
                 0,
                 MetodosContactos.NumTelefonoMovil,
-                "2945583234"
+                "tel:2945583234"
             ),
             Contacto(
                 2,
@@ -29,26 +29,26 @@ class CargaContacto() {
                 3,
                 0,
                 MetodosContactos.LinkInstagram,
-                "2945583234"
+                "https://www.instagram.com/lalunaesquel/?hl=es"
             ),
             Contacto(
                 4,
                 0,
                 MetodosContactos.LinkWhatsapp,
-                "2945583234"
+                "https://wa.link/a9p22x"
             ),
 
             Contacto(
                 6,
                 9,
                 MetodosContactos.NumTelefonoMovil,
-                "02945 59-5915"
+                "tel:02945 59-5915"
             ),
             Contacto(
                 7,
                 9,
                 MetodosContactos.LinkFacebook,
-                "https://es-la.facebook.com/cerveceria.amancay/"
+                "https://www.facebook.com/cerveceria.amancay"
             ),
             Contacto(
                 8,
@@ -59,8 +59,8 @@ class CargaContacto() {
             Contacto(
                 9,
                 9,
-                MetodosContactos.LinkWhatsapp,
-                "cerveceriaamancay.com"
+                MetodosContactos.PaginaWeb,
+                "https://cerveceriaamancay.com.ar"
             )
         )
     }

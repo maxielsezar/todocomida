@@ -12,19 +12,10 @@
 
     <ImageView
         android:id="@+id/ItemContactoImagen"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="0dp"
         android:contentDescription="@string/imagen"
         android:scaleType="centerCrop" />
-
-    <TextView
-        android:id="@+id/ItemLinkContacto"
-        android:layout_width="115dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="6dp"
-        android:textSize="16sp" />
-
 
 </com.google.android.material.card.MaterialCardView>

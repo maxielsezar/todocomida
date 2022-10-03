@@ -6,4 +6,5 @@ enum class MetodosContactos{
     LinkFacebook,
     LinkWhatsapp,
     LinkInstagram,
+    PaginaWeb
 }
