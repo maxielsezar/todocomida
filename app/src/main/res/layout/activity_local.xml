@@ -56,9 +56,16 @@
                 tools:layout_editor_absoluteY="199dp" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/ListadoProducto"
+                android:id="@+id/ListadoContacto"
                 android:layout_width="match_parent"
                 android:layout_height="205dp"
+                android:orientation="horizontal"
+                app:layoutManager="LinearLayoutManager" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ListadoProducto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 app:layoutManager="LinearLayoutManager" />
 
         </LinearLayout>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginTop="30dp"
     android:layout_margin="6dp"
@@ -12,27 +12,27 @@
 
     <ImageView
         android:id="@+id/ItemContactoImagen"
-        android:layout_width="100dp"
-        android:layout_height="match_parent"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
         android:layout_marginStart="0dp"
         android:contentDescription="@string/imagen"
         android:scaleType="centerCrop" />
 
     <TextView
         android:id="@+id/ItemTipoContacto"
-        android:layout_width="271dp"
+        android:layout_width="145dp"
         android:layout_height="28dp"
-        android:layout_marginStart="127dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="0dp"
         android:textSize="22sp" />
 
     <TextView
         android:id="@+id/ItemLinkContacto"
-        android:layout_width="271dp"
+        android:layout_width="147dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="127dp"
-        android:layout_marginTop="65dp"
-        android:textSize="16sp"  />
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:textSize="16sp" />
 
 
 </com.google.android.material.card.MaterialCardView>

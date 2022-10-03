@@ -14,7 +14,7 @@ class ContactoAdapter(
 ): RecyclerView.Adapter<ContactoAdapter.contactoViewHolder>() {
 
     class contactoViewHolder(view: View): RecyclerView.ViewHolder(view) {
-        val nombreContacto: TextView = view.findViewById(R.id.ItemLinkContacto)
+        val nombreContacto: TextView = view.findViewById(R.id.ItemTipoContacto)
         val linkContacto: TextView = view.findViewById(R.id.ItemLinkContacto)
 
     }
