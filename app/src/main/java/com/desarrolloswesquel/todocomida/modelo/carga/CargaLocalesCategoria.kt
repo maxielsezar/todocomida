@@ -2,10 +2,10 @@ package com.desarrolloswesquel.todocomida.modelo.carga
 
 import com.desarrolloswesquel.todocomida.modelo.LocalesCategoria
 
-class CargaLocalesCategoria() {
+class CargaLocalesCategoria {
 
     fun listaLocalesCategoria(): List<LocalesCategoria> {
-        return listOf<LocalesCategoria>(
+        return listOf(
             LocalesCategoria(
                 0,
                 1

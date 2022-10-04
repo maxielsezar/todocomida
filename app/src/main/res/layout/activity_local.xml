@@ -57,7 +57,7 @@
                 android:id="@+id/ItemLocalContacto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="contacto"
+                android:text="@string/contacto"
                 android:textAppearance="?attr/textAppearanceHeadline6"
                 android:layout_marginStart="20dp"
                 android:textSize="32sp"

@@ -3,10 +3,10 @@ package com.desarrolloswesquel.todocomida.modelo.carga
 import com.desarrolloswesquel.todocomida.modelo.Contacto
 import com.desarrolloswesquel.todocomida.modelo.MetodosContactos
 
-class CargaContacto() {
+class CargaContacto {
 
     fun listaContacto(): List<Contacto> {
-        return listOf<Contacto>(
+        return listOf(
             Contacto(
                 0,
                 0,

@@ -4,10 +4,10 @@ package com.desarrolloswesquel.todocomida.modelo.carga
 import com.desarrolloswesquel.todocomida.R
 import com.desarrolloswesquel.todocomida.modelo.Local
 
-class CargarLocal() {
+class CargarLocal {
 
     fun listaLocales(): List<Local> {
-        return listOf<Local>(
+        return listOf(
             Local(0,
                 "La Luna",
                 "Restaurant",

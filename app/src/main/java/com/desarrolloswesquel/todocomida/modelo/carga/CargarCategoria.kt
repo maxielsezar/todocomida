@@ -4,10 +4,10 @@ package com.desarrolloswesquel.todocomida.modelo.carga
 import com.desarrolloswesquel.todocomida.R
 import com.desarrolloswesquel.todocomida.modelo.Categoria
 
-class CargarCategoria() {
+class CargarCategoria {
 
     fun listaCategoria(): List<Categoria> {
-        return listOf<Categoria>(
+        return listOf(
             Categoria(
                 0,
                 "Pizzas",
