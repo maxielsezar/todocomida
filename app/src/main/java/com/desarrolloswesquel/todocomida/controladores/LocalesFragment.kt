@@ -45,6 +45,7 @@ class LocalesFragment : Fragment(), SearchView.OnQueryTextListener {
             .putExtra("rubrolocal", local.Rubro)
             .putExtra("direccionlocal", local.DireccionLocal)
             .putExtra("imagenlocal", local.ImagenLocal)
+            .putExtra("idLocal",local.IdLocal)
         startActivity(intent)
     }
 
