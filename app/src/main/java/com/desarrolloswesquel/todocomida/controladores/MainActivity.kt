@@ -1,17 +1,13 @@
 package com.desarrolloswesquel.todocomida.controladores
 
 import android.Manifest
-import android.app.Activity
-import android.content.pm.PackageManager
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.desarrolloswesquel.todocomida.R
 import com.desarrolloswesquel.todocomida.databinding.ActivityMainBinding
-import com.google.android.gms.maps.GoogleMap
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {

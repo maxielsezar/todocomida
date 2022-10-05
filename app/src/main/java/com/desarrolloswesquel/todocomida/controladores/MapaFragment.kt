@@ -24,10 +24,7 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.GoogleMap.OnMarkerClickListener
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
-import com.google.android.gms.maps.model.BitmapDescriptorFactory
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.Marker
-import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.maps.model.*
 
 
 class MapaFragment : Fragment(), OnMapReadyCallback, OnMarkerClickListener {
@@ -41,7 +38,6 @@ class MapaFragment : Fragment(), OnMapReadyCallback, OnMarkerClickListener {
     companion object {
         const val REQUEST_CODE_LOCATION = 0
     }
-
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -59,7 +55,7 @@ class MapaFragment : Fragment(), OnMapReadyCallback, OnMarkerClickListener {
     override fun onMapReady(googleMap: GoogleMap) {
         map = googleMap
         localizacionActivada()
-        //map.setMapStyle(MapStyleOptions.loadRawResourceStyle(R.raw.map_style)
+        //map.setMapStyle(context?.let { MapStyleOptions.loadRawResourceStyle(it, R.raw.map_style) })
         //map.setMapStyle(MapStyleOptions(resources.getString(R.string.style_json)))
         for (Local in ListaLocales) {
             map.addMarker(
