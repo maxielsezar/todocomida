@@ -8,10 +8,10 @@
     android:clickable="true"
     android:focusable="true"
     android:checkable="true"
-    android:id="@+id/ItemProducto">
+    android:id="@+id/ItemOferta">
 
     <ImageView
-        android:id="@+id/ItemProductoImagen"
+        android:id="@+id/ItemOfertaImagen"
         android:layout_width="120dp"
         android:layout_height="77dp"
         android:layout_marginStart="0dp"
@@ -19,7 +19,7 @@
         android:scaleType="centerCrop" />
 
     <TextView
-        android:id="@+id/ItemProductoNombre"
+        android:id="@+id/ItemOfertaNombre"
         android:layout_width="271dp"
         android:layout_height="28dp"
         android:layout_marginStart="127dp"
@@ -28,7 +28,7 @@
 
 
     <TextView
-        android:id="@+id/ItemProductoDescripcion"
+        android:id="@+id/ItemOfertaDescripcion"
         android:layout_width="271dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="127dp"
@@ -36,7 +36,7 @@
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/ItemProductoPrecio"
+        android:id="@+id/ItemOfertaPrecio"
         android:layout_width="271dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="127dp"
